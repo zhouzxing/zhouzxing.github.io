@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>技术基础认识与路径方向</title>
+      <link href="/2023/12/17/%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%86%E4%B8%8E%E8%B7%AF%E5%BE%84%E6%96%B9%E5%90%91/"/>
+      <url>/2023/12/17/%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%86%E4%B8%8E%E8%B7%AF%E5%BE%84%E6%96%B9%E5%90%91/</url>
+      
+        <content type="html"><![CDATA[<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><blockquote><p>从应用层，中间件，底层：OS,体系结构，网络协议，技术基础与应用拓展能力</p></blockquote><h3 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h3><ul><li>应用开发<ul><li>开发语言 - 业务场景<ul><li>Java - Spring生态</li><li>Go</li><li>Python - 数据分析，建模分析</li><li>C,C++ - 嵌入式，客户端，图形图像，</li></ul></li></ul></li><li>网络协议开发<ul><li>操作系统内核协议栈解读</li><li>Nginx源码解读</li></ul></li><li>中间件开发<ul><li>分布式系统与应用<ul><li>RPC</li></ul></li></ul></li><li>系统软件开发<ul><li>存储相关<ul><li>redis解读</li><li>k-v存储引擎</li></ul></li><li>体系结构基础</li><li>操作系统 - Linux, 国产，</li><li>CPU指令集 - RISC-V,ARM,AMD,Intel</li></ul></li></ul><h3 id="进度管理"><a href="#进度管理" class="headerlink" title="进度管理"></a>进度管理</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2023/12/17/hello-world/"/>
       <url>/2023/12/17/hello-world/</url>
