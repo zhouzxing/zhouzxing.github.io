@@ -3,21 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2023 | Hexo</title>
+  <title>Archives: 2023 | 邢洲</title>
   <meta name="author" content="geeker by seeker">
+  
+  <meta name="description" content="xingzhou blogs">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:site_name" content="邢洲"/>
 
   
     <meta property="og:image" content=""/>
   
 
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="邢洲" type="application/atom+xml">
   
   
     <link href="/favicon.png" rel="icon">
@@ -40,12 +42,9 @@
 
   <script src="/js/jquery-2.0.3.min.js"></script>
   
-    <script src="/js/marked.js"></script>
-    <script src="/js/comment.js"></script>
-    <script src="/js/timeago.min.js"></script>
-    <script src="/js/highlight.min.js"></script>
-	<script src="/js/spin.min.js"></script>
   
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+	<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
   
   <!-- analytics -->
   
@@ -63,31 +62,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-       <a class="navbar-brand" href="/">Hexo</a>
+       <a class="navbar-brand" href="/">邢洲</a>
       <div class="collapse navbar-collapse nav-menu">
 		<ul class="nav navbar-nav">
 		  
 		  <li>
-			<a href="/archives" title="All the articles.">
-			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/categories" title="All the categories.">
-			  <i class="fa fa-folder"></i>Categories
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/tags" title="All the tags.">
-			  <i class="fa fa-tags"></i>Tags
-			</a>
-		  </li>
-		  
-		  <li>
 			<a href="/about" title="About me.">
 			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Projects" title="All the Projects.">
+			  <i class="fa fa-folder"></i>Projects
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
 			</a>
 		  </li>
 		  
@@ -128,33 +121,6 @@
 		<li class="listing-item">
 		<span class="date_class"> 2023-12-17 </span> &raquo;
 		
-		   <span class="title"><a href="/2023/12/17/test-one-call/" >test one call</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2023-12-17 </span> &raquo;
-		
-		   <span class="title"><a href="/2023/12/17/about-me/" >about me</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2023-12-17 </span> &raquo;
-		
-		   <span class="title"><a href="/2023/12/17/post-title-with-whitespace/" >post title with whitespace</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2023-12-17 </span> &raquo;
-		
 		   <span class="title"><a href="/2023/12/17/hello-world/" >Hello World</a></span>
 		
 		</li>			
@@ -181,44 +147,13 @@
 		
 			<div class="widget">
     
-	    <h4 class="dsq-widget-title">Recent Comments</h4>
-		<div id="recent-comments"></div>
-		<script type="text/javascript">
-		    getRecentCommentsList({
-			   type: "github" ? "github" : "github",
-			   user: "wzpan",
-               repo: "hexo-theme-freemind-blog",
-               client_id: "bf7d4ba11877db88543e",
-               client_secret: "bff8a6b06b745c0bfcdccbe225623ea8e2a057bb",
-			   count: "5" ? "5" : 5,
-			   recent_comments_target: "#recent-comments"
-			});
-		</script>
-	
 </div>
-
-		
-			
-		
-			
 
 		
 			
 <div class="widget">
   <h4>Recent Posts</h4>
   <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2023/12/17/test-one-call/" ><i class="fa fa-file-o"></i>test one call</a>
-      </li>
-    
-      <li>
-        <a href="/2023/12/17/about-me/" ><i class="fa fa-file-o"></i>about me</a>
-      </li>
-    
-      <li>
-        <a href="/2023/12/17/post-title-with-whitespace/" ><i class="fa fa-file-o"></i>post title with whitespace</a>
-      </li>
     
       <li>
         <a href="/2023/12/17/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
@@ -233,11 +168,7 @@
 	<h4>Links</h4>
 	<ul class="blogroll list-unstyled">
 	
-		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/freemind/" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/wzpan" title="My Github account." target="_blank"]);">My Github</a></li>
-	
-		<li><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/hahack" title="My Linkin account." target="_blank"]);">My LinkedIn</a></li>
+		<li><i class="fa fa-github"></i><a href="http://www.github.com/zhouzxing" title="My Github account." target="_blank"]);">My Github</a></li>
 	
 	</ul>
 </div>
@@ -295,22 +226,6 @@
 
 
 <!-- syntax highlighting -->
-
-  <script>
-  marked.setOptions({
-    highlight: function (code, lang) {
-        return hljs.highlightAuto(code).value;
-    }
-  });
-  function Highlighting(){
-    var markdowns = document.getElementsByClassName('markdown');
-    for(var i=0;i<markdowns.length;i++){
-        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
-    }
-  }
-  window.addEventListener('DOMContentLoaded', Highlighting, false);
-  window.addEventListener('load', Highlighting, false);
-  </script>
 
 
 </body>
