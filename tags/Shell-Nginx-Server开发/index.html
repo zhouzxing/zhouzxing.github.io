@@ -1,320 +1,415 @@
-<!DOCTYPE HTML>
-<html>
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/fluid.png">
+  <link rel="icon" href="/blog/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <title>Shell, Nginx,Server开发 | ISeeker</title>
+  <meta name="theme-color" content="#2f4154">
   <meta name="author" content="geeker by seeker">
+  <meta name="keywords" content="系统编程，体系结构，网络协议-web, 底层生态">
   
-  <meta name="description" content="System Programmer: Compiler,OS,DB,Network Protocal...">
+    <meta name="description" content="System Programmer: Compiler,OS,DB,Network Protocal...">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tags - Shell, Nginx,Server开发">
+<meta property="og:url" content="http://example.com/tags/Shell-Nginx-Server%E5%BC%80%E5%8F%91/index.html">
+<meta property="og:site_name" content="ISeeker">
+<meta property="og:description" content="System Programmer: Compiler,OS,DB,Network Protocal...">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="geeker by seeker">
+<meta property="article:tag" content="系统编程，体系结构，网络协议-web, 底层生态">
+<meta name="twitter:card" content="summary_large_image">
   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <title>Tags - Shell, Nginx,Server开发 - ISeeker</title>
 
-  
-  <meta property="og:site_name" content="ISeeker"/>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
-  
-    <meta property="og:image" content=""/>
-  
 
-  
-    <link rel="alternative" href="/blog/atom.xml" title="ISeeker" type="application/atom+xml">
-  
-  
-    <link href="/blog/favicon.png" rel="icon">
-  
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/blog/css/themes/cerulean.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/blog/css/font-awesome.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/blog/css/responsive.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/blog/css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/blog/css/highlight-default.min.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/blog/css/google-fonts.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/blog/css/comment.css" media="screen" type="text/css">
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
-  <![endif]-->
 
-  <script src="/blog/js/jquery-2.0.3.min.js"></script>
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/blog/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/blog/css/highlight.css" />
   
-  
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-	<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-  
-  <!-- analytics -->
+    <link id="highlight-css-dark" rel="stylesheet" href="/blog/css/highlight-dark.css" />
   
 
 
 
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/blog/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"5R2VZc6axoodNhFpvPfA2ge5-gzGzoHsz","app_key":"rVSCae84dhNyvCVXd6i3FEyT","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/blog/js/utils.js" ></script>
+  <script  src="/blog/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
 <meta name="generator" content="Hexo 7.0.0"></head>
 
+
 <body>
-  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	<span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       <a class="navbar-brand" href="/blog/">ISeeker</a>
-      <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href="/blog/about" title="About me.">
-			  <i class="fa fa-user"></i>About
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/blog/Projects" title="All the Projects.">
-			  <i class="fa fa-folder"></i>Projects
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/blog/Fun-Stuffs" title="All the records and thinkings of World.">
-			  <i class="fa fa-folder"></i>Fun Stuffs
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/blog/archives" title="All the articles.">
-			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		</ul>
-      </div>
-    </div> <!-- container -->
-</nav>
-<div class="clearfix"></div>
-
-  <div class="container">
-    <div class="content">
-      
-
-<!-- title -->
-<div class="page-header page-header-inverse ">
-  <h1 class="archive-title-tag title title-inverse ">Shell, Nginx,Server开发</h1>
-</div>
-
-<div class="row page">
-  <!-- cols -->
   
-  <div class="col-md-9">
-	
 
-	  <div id="top_search"></div>
-
-      
-         <!-- display as entry -->
-	     <div class="mypage">
-	       
-		     
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2023-12-17 </div>
-			<div class="article-title"><a href="/blog/2023/12/17/Shell%E4%B8%93%E9%A2%98%E8%A7%A3%E8%AF%BB/" >Shell专题解读</a></div>
-		</h3>
-	
-
-
-		     
-<div class="entry">
-
-  <div class="row">
-	
-	
-		<h1 id="Shell-Topics"><a href="#Shell-Topics" class="headerlink" title="Shell Topics"></a>Shell Topics</h1><blockquote>
-<p>服务端运维-管理：开发，主题方式深入内核，中间件，体系结构-CPU</p>
-</blockquote>
-<h2 id="服务器开发"><a href="#服务器开发" class="headerlink" title="服务器开发"></a>服务器开发</h2><blockquote>
-<p>常见场景解析</p>
-<ul>
-<li>服务之间网络通信路径，Ping通，TCP访问不到：涉及路由表-ECMP,防火墙，TCP&#x2F;IP协议选择路径-hash五元组</li>
-<li>Nginx配置</li>
-</ul>
-</blockquote>
-<h3 id="观测与判断"><a href="#观测与判断" class="headerlink" title="观测与判断"></a>观测与判断</h3><blockquote>
-<p>脚本语法部分：不够专 -&gt; 拿OS脚本 <strong>训练</strong></p>
-</blockquote>
-<ul>
-<li><p>服务状态</p>
-<blockquote>
-<p>可检测的范围： nginx手动启动，service, systemctl无法观测到？</p>
-</blockquote>
-<ul>
-<li>service :  运行&#x2F;etc&#x2F;init.d&#x2F;xxx.sh<ul>
-<li>service –status-all: ufw[+] -&gt; {runninng}, 但是ufw status : inactive -&gt; <strong>怎么解释</strong></li>
-</ul>
-</li>
-<li>systemctl ： systemd, {&#x2F;etc&#x2F;systemd&#x2F;***}</li>
-<li>ps</li>
-</ul>
-</li>
-<li><p>磁盘设备挂载信息： du -h | sort -hr</p>
-</li>
-<li></li>
-</ul>
-<h3 id="安装与源码"><a href="#安装与源码" class="headerlink" title="安装与源码"></a>安装与源码</h3><blockquote>
-<p>安装与配置，生效优先级</p>
-<ul>
-<li>PMS的默认行为：</li>
-<li>源码安装：</li>
-</ul>
-<p>冲突问题： make install -&gt; &#x2F;usr&#x2F;bin&#x2F;xxx, 配置文件 -&gt; &#x2F;etc&#x2F;xxx&#x2F;conf</p>
-</blockquote>
-<ul>
-<li>PMS工具设计与实现： rpm , dpkg -&gt; aptitude:前端展示<ul>
-<li>对应软件安装信息使用的数据库如何设计与实现？ - 软件包，安装文件信息</li>
-<li>对远端repository，访问工具</li>
-<li>软件包依赖关系检测</li>
-</ul>
-</li>
-<li></li>
-<li></li>
-</ul>
-<h2 id="存储管理"><a href="#存储管理" class="headerlink" title="存储管理"></a>存储管理</h2><h3 id="FS文件系统"><a href="#FS文件系统" class="headerlink" title="FS文件系统"></a>FS文件系统</h3><h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><h3 id="虚拟进程"><a href="#虚拟进程" class="headerlink" title="虚拟进程"></a>虚拟进程</h3><blockquote>
-<p>软件框架 - 套壳工具</p>
-<ul>
-<li>常见：<strong>微信分身工具</strong>，</li>
-<li>App开发，桌面客户端开发</li>
-</ul>
-</blockquote>
-
-	
-	</div>
-  <a type="button" href="/blog/2023/12/17/Shell%E4%B8%93%E9%A2%98%E8%A7%A3%E8%AF%BB/#more" class="btn btn-default more">Read More</a>
-</div>
-
-	       
-	     </div>
-	     <div>
-	       <center>
-	         <div class="pagination">
-<ul class="pagination">
-	 
-</ul>
-</div>
-
-	       </center>
-	     </div>	
-      
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
-	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
-
-
-		
-			<div class="widget">
+  <header>
     
-</div>
 
-		
-			
-<div class="widget">
-  <h4>Recent Posts</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/blog/2023/12/17/Shell%E4%B8%93%E9%A2%98%E8%A7%A3%E8%AF%BB/" ><i class="fa fa-file-o"></i>Shell专题解读</a>
-      </li>
-    
-      <li>
-        <a href="/blog/2023/12/17/%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%86%E4%B8%8E%E8%B7%AF%E5%BE%84%E6%96%B9%E5%90%91/" ><i class="fa fa-file-o"></i>技术基础认识与路径方向</a>
-      </li>
-    
-      <li>
-        <a href="/blog/2023/12/17/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
-      </li>
-    
-  </ul>
-</div>
+<div class="header-inner" style="height: 80vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/blog/">
+      <strong>MacroGeeker</strong>
+    </a>
 
-		
-			
-<div class="widget">
-	<h4>Links</h4>
-	<ul class="blogroll list-unstyled">
-	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/zhouzxing" title="My Github account." target="_blank"]);">My Github</a></li>
-	
-	</ul>
-</div>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
-
-
-
-
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
     </div>
   </div>
-  <div class="container-narrow">
-    <footer> <p>
-  &copy; 2023 geeker by seeker
-  
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
-</p> </footer>
-  </div> <!-- container-narrow -->
-  
-
+</nav>
 
   
-<a id="gotop" href="#">   
-  <span>▲</span> 
-</a>
 
-<script src="/blog/js/jquery.imagesloaded.min.js"></script>
-<script src="/blog/js/gallery.js"></script>
-<script src="/blog/js/bootstrap.min.js"></script>
-<script src="/blog/js/main.js"></script>
-<script src="/blog/js/search.js"></script> 
+<div id="banner" class="banner" parallax=true
+     style="background: url('/blog/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Tags - Shell, Nginx,Server开发"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">1 posts in total</p>
+  <hr>
+  
+  
+    
+      
+      <p class="h5">2023</p>
+    
+    <a href="/blog/2023/12/17/Shell%E4%B8%93%E9%A2%98%E8%A7%A3%E8%AF%BB/" class="list-group-item list-group-item-action">
+      <time>12-17</time>
+      <div class="list-group-item-title">Shell专题解读</div>
+    </a>
+  
+</div>
 
 
-<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
 
 
 
-   <script type="text/javascript">      
-     var search_path = "search.xml";
-	 if (search_path.length == 0) {
-	 	search_path = "search.xml";
-	 }
-	 var path = "/blog/" + search_path;
-     searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访问客数 
+        <span id="leancloud-site-uv"></span>
+         次
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
 
 
-<!-- syntax highlighting -->
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/blog/js/events.js" ></script>
+<script  src="/blog/js/plugins.js" ></script>
 
 
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/blog/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script defer src="/blog/js/leancloud.js" ></script>
+
+  <script  src="/blog/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/blog/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
 </body>
 </html>

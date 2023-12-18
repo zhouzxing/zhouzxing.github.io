@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Shell专题解读</title>
+    <link href="/blog/2023/12/17/Shell%E4%B8%93%E9%A2%98%E8%A7%A3%E8%AF%BB/"/>
+    <url>/blog/2023/12/17/Shell%E4%B8%93%E9%A2%98%E8%A7%A3%E8%AF%BB/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Shell-Topics"><a href="#Shell-Topics" class="headerlink" title="Shell Topics"></a>Shell Topics</h1><blockquote><p>服务端运维-管理：开发，主题方式深入内核，中间件，体系结构-CPU</p></blockquote><h2 id="服务器开发"><a href="#服务器开发" class="headerlink" title="服务器开发"></a>服务器开发</h2><blockquote><p>常见场景解析</p><ul><li>服务之间网络通信路径，Ping通，TCP访问不到：涉及路由表-ECMP,防火墙，TCP&#x2F;IP协议选择路径-hash五元组</li><li>Nginx配置</li></ul></blockquote><h3 id="观测与判断"><a href="#观测与判断" class="headerlink" title="观测与判断"></a>观测与判断</h3><blockquote><p>脚本语法部分：不够专 -&gt; 拿OS脚本 <strong>训练</strong></p></blockquote><ul><li><p>服务状态</p><blockquote><p>可检测的范围： nginx手动启动，service, systemctl无法观测到？</p></blockquote><ul><li>service :  运行&#x2F;etc&#x2F;init.d&#x2F;xxx.sh<ul><li>service –status-all: ufw[+] -&gt; {runninng}, 但是ufw status : inactive -&gt; <strong>怎么解释</strong></li></ul></li><li>systemctl ： systemd, {&#x2F;etc&#x2F;systemd&#x2F;***}</li><li>ps</li></ul></li><li><p>磁盘设备挂载信息： du -h | sort -hr</p></li><li></li></ul><h3 id="安装与源码"><a href="#安装与源码" class="headerlink" title="安装与源码"></a>安装与源码</h3><blockquote><p>安装与配置，生效优先级</p><ul><li>PMS的默认行为：</li><li>源码安装：</li></ul><p>冲突问题： make install -&gt; &#x2F;usr&#x2F;bin&#x2F;xxx, 配置文件 -&gt; &#x2F;etc&#x2F;xxx&#x2F;conf</p></blockquote><ul><li>PMS工具设计与实现： rpm , dpkg -&gt; aptitude:前端展示<ul><li>对应软件安装信息使用的数据库如何设计与实现？ - 软件包，安装文件信息</li><li>对远端repository，访问工具</li><li>软件包依赖关系检测</li></ul></li><li></li><li></li></ul><h2 id="存储管理"><a href="#存储管理" class="headerlink" title="存储管理"></a>存储管理</h2><h3 id="FS文件系统"><a href="#FS文件系统" class="headerlink" title="FS文件系统"></a>FS文件系统</h3><h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><h3 id="虚拟进程"><a href="#虚拟进程" class="headerlink" title="虚拟进程"></a>虚拟进程</h3><blockquote><p>软件框架 - 套壳工具</p><ul><li>常见：<strong>微信分身工具</strong>，</li><li>App开发，桌面客户端开发</li></ul></blockquote>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Shell, Nginx,Server开发</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>技术基础认识与路径方向</title>
+    <link href="/blog/2023/12/17/%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%86%E4%B8%8E%E8%B7%AF%E5%BE%84%E6%96%B9%E5%90%91/"/>
+    <url>/blog/2023/12/17/%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%86%E4%B8%8E%E8%B7%AF%E5%BE%84%E6%96%B9%E5%90%91/</url>
+    
+    <content type="html"><![CDATA[<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><blockquote><p>从应用层，中间件，底层：OS,体系结构，网络协议，技术基础与应用拓展能力</p></blockquote><h3 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h3><ul><li>应用开发<ul><li>开发语言 - 业务场景<ul><li>Java - Spring生态</li><li>Go</li><li>Python - 数据分析，建模分析</li><li>C,C++ - 嵌入式，客户端，图形图像，</li></ul></li></ul></li><li>网络协议开发<ul><li>操作系统内核协议栈解读</li><li>Nginx源码解读</li></ul></li><li>中间件开发<ul><li>分布式系统与应用<ul><li>RPC</li></ul></li></ul></li><li>系统软件开发<ul><li>存储相关<ul><li>redis解读</li><li>k-v存储引擎</li></ul></li><li>体系结构基础</li><li>操作系统 - Linux, 国产，</li><li>CPU指令集 - RISC-V,ARM,AMD,Intel</li></ul></li></ul><h3 id="进度管理"><a href="#进度管理" class="headerlink" title="进度管理"></a>进度管理</h3>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/blog/2023/12/17/hello-world/"/>
+    <url>/blog/2023/12/17/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="init-config"><a href="#init-config" class="headerlink" title="init config"></a>init config</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
